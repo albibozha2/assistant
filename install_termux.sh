@@ -12,9 +12,12 @@ pkg update
 echo "Upgrading packages..."
 pkg upgrade -y
 
-# Install Python
+# Install Python and timezone data
 echo "Installing Python..."
 pkg install python -y
+
+echo "Installing timezone data..."
+pkg install tzdata -y
 
 # Upgrade pip
 echo "Upgrading pip..."
