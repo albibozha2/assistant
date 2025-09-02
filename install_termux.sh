@@ -19,6 +19,9 @@ pkg install python -y
 echo "Installing timezone data..."
 pkg install tzdata -y
 
+echo "Setting timezone environment variable to UTC..."
+export TZ=UTC
+
 # Upgrade pip
 echo "Upgrading pip..."
 pip install --upgrade pip
